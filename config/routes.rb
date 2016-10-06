@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :songs
   resources :shows
   resources :venues
   root 'application#hello'
