@@ -60,3 +60,24 @@ $ heroku run rails db:migrate
 ## Notes
 
 Don't manually mess with any of the database migration files!
+
+
+## To-do
+
+Add SongAlias
+    *^SongID
+    *Alias
+Add SetListSong
+    *^ShowDate
+    *SetNumber
+    *SongNumber
+    ^SongID
+    -Length
+    -Transition
+    -Notes
+Add User
+    *Username
+Add UserShow
+    *^UserID
+    *^ShowID
+Update views to show ref names instead of ID's
