@@ -53,4 +53,10 @@ Create app on Heroku
 ``` 
 $ heroku create tribedb-####
 $ git push heroku master
+$ heroku run rails db:migrate
 ```
+
+
+## Notes
+
+Don't manually mess with any of the database migration files!
