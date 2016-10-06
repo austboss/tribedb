@@ -38,3 +38,19 @@ To run the app in a local server:
 ```
 $ rails server -b $IP -p $PORT
 ```
+
+Initialize Git repository
+
+```
+$ git init
+$ git add -A
+$ git commit -m "Initialize repository"
+$ git remote add origin git@github.com:austboss/tribedb.git
+```
+
+Create app on Heroku
+
+``` 
+$ heroku create tribedb-####
+$ git push heroku master
+```
