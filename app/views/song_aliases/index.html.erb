@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Song Aliases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Alias</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @song_aliases.each do |song_alias| %>
+      <tr>
+        <td><%= song_alias.song_id %></td>
+        <td><%= song_alias.alias %></td>
+        <td><%= link_to 'Show', song_alias %></td>
+        <td><%= link_to 'Edit', edit_song_alias_path(song_alias) %></td>
+        <td><%= link_to 'Destroy', song_alias, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Song Alias', new_song_alias_path %>

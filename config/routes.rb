@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :song_aliases
   resources :songs
   resources :shows
   resources :venues

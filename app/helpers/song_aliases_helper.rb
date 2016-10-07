@@ -1,0 +1,2 @@
+module SongAliasesHelper
+end
