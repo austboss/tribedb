@@ -62,11 +62,19 @@ $ heroku run rails db:migrate
 Don't manually mess with any of the database migration files!
 
 
+
+## Troubleshooting
+
+If getting "connection refused" errors, database may need to be restarted
+
+```
+$ sudo service postgresql restart
+```
+
+
 ## To-do
 
-Add SongAlias
-    *^SongID
-    *Alias
+
 Add SetListSong
     *^ShowDate
     *SetNumber
