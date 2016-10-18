@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  shortName: MyString
-  city: MyString
-  state: MyString
+  name: Test Venue 1
+  shortName: TV1
+  city: Test
+  state: TST
 
 two:
-  name: MyString
-  shortName: MyString
-  city: MyString
-  state: MyString
+  name: Test Venue 1
+  shortName: TV2
+  city: Test
+  state: TST

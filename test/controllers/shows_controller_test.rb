@@ -3,6 +3,7 @@ require 'test_helper'
 class ShowsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @show = shows(:one)
+    @show_new = Show.new(date: "1986-01-01", venue_id: 1)
   end
 
   test "should get index" do
@@ -17,7 +18,7 @@ class ShowsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create show" do
     assert_difference('Show.count') do
-      post shows_url, params: { show: { date: @show.date, venue_id: @show.venue_id } }
+      post shows_url, params: { show: { date: @show_new.date, venue_id: @show_new.venue_id } }
     end
 
     assert_redirected_to show_url(Show.last)
