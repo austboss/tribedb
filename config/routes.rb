@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'users/new'
+
   resources :song_aliases
   resources :songs
   resources :shows
